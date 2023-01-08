@@ -1,0 +1,1 @@
+C:\Users\1\source\repos\CppCLR_WinformsProject2\CppCLR_WinformsProject2\Debug\CppCLR_WinformsProject2.vcxproj.AssemblyReference.cache
