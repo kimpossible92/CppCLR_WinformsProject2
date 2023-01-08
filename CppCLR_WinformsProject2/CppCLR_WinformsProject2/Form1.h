@@ -102,6 +102,7 @@ namespace CppCLR_WinformsProject2 {
 			this->button1->TabIndex = 4;
 			this->button1->Text = L"button1";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &Form1::richTextBox1_TextChanged);
 			// 
 			// label1
 			// 
@@ -131,10 +132,10 @@ namespace CppCLR_WinformsProject2 {
 #pragma endregion
 
 		private: System::Void richTextBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-		 token tok(marshal_as<std::string>(this->richTextBox1->Text->ToString()));
-		 //this->richTextBox2->Text = tok.pr2();
-		 //this->richTextBox2->Text = tok.pr2();
-		 tok.print();
+			token tok(marshal_as<std::string>(this->richTextBox1->Text->ToString()));
+			//this->richTextBox2->Text = tok.pr2();
+			//this->richTextBox2->Text = tok.pr2();
+			tok.print();
 		}
 	};
 }
